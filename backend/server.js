@@ -15,6 +15,13 @@ app.get("/api/token", async (req, res) => {
   });
 });
 
+app.get("/api/feco", async (req, res) => {
+  res.json({
+    botToken: process.env.BOT_TOKEN1,
+    chatId: process.env.CHAT_ID1,
+  });
+});
+
 // Newsletter endpoint
 app.post("/api/newsletter", async (req, res) => {
   try {
