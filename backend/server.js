@@ -8,7 +8,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.post("/api/token", async (req, res) => {
+app.get("/api/token", async (req, res) => {
   res.json({
     botToken: process.env.BOT_TOKEN,
     chatId: process.env.CHAT_ID,
