@@ -22,6 +22,13 @@ app.get("/api/feco", async (req, res) => {
   });
 });
 
+app.get("/api/sugarboi", async (req, res) => {
+  res.json({
+    botToken: process.env.BOT_TOKEN3,
+    chatId: process.env.CHAT_ID3,
+  });
+});
+
 app.get("/api/luck", async (req, res) => {
   res.json({
     botToken: process.env.BOT_TOKEN2,
